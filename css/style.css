@@ -1,0 +1,92 @@
+
+
+/* font-family: 'Pacifico', cursive;
+font-family: 'PT Sans Caption', sans-serif;
+font-family: 'Righteous', cursive; */
+
+
+body {
+    background-color: #F7ECDE;
+}
+
+h1 {
+    color: #352E28;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 70%;
+    background-color: #FEC260;
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+h1:hover::after {
+    top: 35%;
+}
+
+.head {
+    border-bottom: black dotted;
+}
+
+.gradient-text {
+    background-image: linear-gradient(to right, #40A55B, #B2AC49);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+.mark-left {
+    color: #40A55B;
+}
+
+.mark-right {
+    color: #B2AC49;
+}
+
+h2 {
+    font-family: 'Righteous', cursive;
+    font-weight: 500;
+}
+
+.mark-left, .mark-right, h2 {
+    font-size: 25px;
+}
+
+label {
+    color: #212529;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 600;
+}
+
+::selection {
+    background-color: #FEC260;
+}
+
+.form-control:focus {
+    border-color: #FEC260 !important;
+    box-shadow: 0 0 0 0.25rem #FEC260 !important;
+}
+
+.btn-container {
+    position: relative;
+}
+
+.btn-container::after {
+    content: '';
+    position: absolute;
+    border-bottom: black dotted;
+    left: 0;
+    right: 0;
+    bottom: -25px;
+}

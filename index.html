@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <script src="unpkg.com_sweetalert@2.1.2_dist_sweetalert.min.js"></script>
+    <title>Bookmark</title>
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-center my-2 head">
+            <h1 class="my-5">Bookmarker</h1>
+        </div>
+        <h2 class="text-center mt-4 mb-5 gradient-text"><i class="fa-solid fa-bookmark mark-left"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark mark-right"></i></h2>
+        <div>
+            <div class="mb-4">
+                <label for="bookmarkName"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+                <input type="text" class="form-control mt-2" placeholder="Bookmark Name" id="bookmarkName">
+            </div>
+            <div>
+                <label for="websiteURL"><i class="fa-solid fa-book-bookmark pe-2"></i> Site URL</label>
+                <input type="text" class="form-control mt-2" placeholder="Website URL" id="websiteURL">
+                <p id="validation" class="mt-2 text-danger"></p>
+            </div>
+            <div class="d-flex justify-content-center my-4 btn-container">
+                <button class="btn btn-danger px-5 py-2" id="btn" onclick="addWebSite();">Submit</button>
+            </div>
+        </div>
+        <div class=" my-5">
+            <table class="table table-striped text-center">
+                <thead>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- <tr>
+                        <td>${i + 1}</td>
+                        <td>${webSitesList[i].siteName}</td>
+                        <td><button class="btn btn-warning" onclick="openWebSite(${i});"><i class="fa-solid fa-eye"></i> Visit</button></td>
+                        <td><button class="btn btn-danger" onclick="deleteWebsite(${i});"><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
