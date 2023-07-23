@@ -12,7 +12,7 @@ body {
 h1 {
     color: #352E28;
     font-family: 'Pacifico', cursive;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 500;
     display: inline-block;
     position: relative;
@@ -60,7 +60,7 @@ h2 {
 }
 
 .mark-left, .mark-right, h2 {
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 label {
