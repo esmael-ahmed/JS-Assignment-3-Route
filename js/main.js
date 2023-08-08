@@ -34,12 +34,12 @@ function addWebSite() {
     else
     {
         validMessage.innerHTML = "Invalid URL";
-        // sweetAlert();
-        window.alert(`Site Name or Url is not valid, Please follow the rules below :
+        sweetAlert();
+        // window.alert(`Site Name or Url is not valid, Please follow the rules below :
 
-        Site name must start with http:// or https://
-        Site name must contain at least 3 characters
-        Site URL must be a valid one`);
+        // Site name must start with http:// or https://
+        // Site name must contain at least 3 characters
+        // Site URL must be a valid one`);
     }
 }
 
